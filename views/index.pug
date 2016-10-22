@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Open+Sans')
+    link(rel='stylesheet', href='/style.css')
+  title Sky Skull Chat
+  body
+    h1 Sky Skull Chat #{trellokey}
+    ul(id="messages")
+    form(action="")
+      input(id="m", autocomplete="off")
+      button Send
+  script(src="https://code.jquery.com/jquery-2.2.1.min.js", integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=", crossorigin="anonymous")
+  script(src="/socket.io/socket.io.js")
+  script(src="/client.js")
